@@ -1,17 +1,17 @@
 /* 고운돋움 폰트 */
 @font-face {
-  font-family: 'GowunDodum-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff')
-    format('woff');
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* 함초롱돋움 폰트 */
 @font-face {
-  font-family: 'HCRDotum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
-    format('woff');
+  font-family: "HCRDotum";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 
 html,
 body {
-  font-family: 'GowunDodum-Regular';
+  font-family: "GowunDodum-Regular";
 }
 
 ul {
@@ -50,7 +50,7 @@ a {
 
 .gnb a {
   color: #ddd;
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
 }
 
 .gnb .login {
@@ -153,7 +153,7 @@ html.open {
   right: 0px;
   top: 0px;
   z-index: 1;
-  background-image: url('../img/hamburger-btn.png');
+  background-image: url("../img/hamburger-btn.png");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -166,7 +166,7 @@ html.open {
   position: absolute;
   right: 0px;
   top: 0px;
-  background-image: url('http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png');
+  background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -320,7 +320,7 @@ html.open {
   top: 45%;
   width: 70%;
   transform: translate(-30%);
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
   z-index: 99;
 }
 
@@ -354,12 +354,12 @@ html.open {
 }
 
 .section-title-container img {
-  width: 60px;
+  width: 45px;
 }
 
 h2.section-title {
   font-size: 34px;
-  font-family: 'GowunDodum-Regular';
+  font-family: "GowunDodum-Regular";
   color: #444;
   text-align: center;
   margin-left: 10px;
@@ -389,7 +389,7 @@ h2.section-title {
 select {
   width: 100%;
   padding: 0.8em 0.5em;
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
   background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
     no-repeat 95% 50%;
   border: 1px solid #999;
@@ -406,7 +406,7 @@ select {
 .map-info {
   display: flex;
   flex-direction: column;
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
 }
 
 .map-info-wrapper {
@@ -544,7 +544,7 @@ table tr {
   padding: 0 20px 50px;
   display: flex;
   align-items: center;
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
 }
 
 .profile .account-info {
@@ -575,7 +575,7 @@ table tr {
   color: #555;
   margin-bottom: 20px;
   padding: 10px;
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
   font-weight: bold;
   line-height: 1.6;
 }
@@ -613,7 +613,7 @@ table tr {
 
 .grid-item-wrapper::after {
   display: block;
-  content: '';
+  content: "";
   padding-bottom: 32%;
 }
 
@@ -672,7 +672,7 @@ table tr {
 }
 
 .swiper-button-play {
-  background: url('../img/play-button.png');
+  background: url("../img/play-button.png");
   position: absolute;
   background-size: cover;
   width: 15px;
@@ -688,7 +688,7 @@ table tr {
 }
 
 .swiper-button-pause {
-  background: url('../img/pause-button.png');
+  background: url("../img/pause-button.png");
   display: inline-block;
   background-size: cover;
   width: 15px;
@@ -733,7 +733,7 @@ table tr {
   /* margin: 0 25px 25px 0; */
   margin-bottom: 25px 10px;
   align-items: center;
-  font-family: 'HCRDotum';
+  font-family: "HCRDotum";
 }
 
 .avatar-container img {

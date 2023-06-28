@@ -63,14 +63,6 @@ exersises.forEach((exersise) => {
 
 labels.forEach((label, labelKey) => {
   label.addEventListener("click", () => {
-    // labels.forEach((label2) => {
-    //   if (label !== label2) {
-    //     label2.classList.remove("isGreen");
-    //   } else {
-    //     label2.classList.toggle("isGreen");
-    //   }
-    // });
-
     explains.forEach((explain, exsKey) => {
       if (labelKey !== exsKey) {
         explain.classList.remove("isBlock");
@@ -132,6 +124,7 @@ const makeCalendar = (date) => {
     dateTitle.textContent = `${currentYear}년 ${currentMonth}월`;
   });
 };
+
 const date = new Date();
 makeCalendar(date);
 // prev month
@@ -150,11 +143,6 @@ nexts.forEach((next) => {
   };
 });
 
-const year = new Date().getFullYear();
-const month = new Date().getMonth() + 1;
-const todate = new Date().getDate();
-
-const ymt = `${year}년 ${month}월 ${todate}일`;
 const currentDate = document.querySelector(".currentDate");
 const divs = document.querySelectorAll(".color");
 divs.forEach((div) => {
@@ -164,7 +152,6 @@ divs.forEach((div) => {
         value.classList.remove("changeBg");
       } else {
         div.classList.toggle("changeBg");
-        currentDate.textContent = ymt;
       }
     });
   });
@@ -186,17 +173,34 @@ buttons.forEach((button) => {
 });
 
 // 상세페이지 탭 구현
-const tapLis = document.querySelectorAll(".tap li a");
-const tapContents = document.querySelectorAll(".tap_container .tap_content");
+const tapLis = document.querySelectorAll(".tap li");
+const svgs = document.querySelectorAll(".tap li svg");
+const tapContents = document.querySelectorAll(".tap_container > .tab_content");
+
 tapLis.forEach((tapLi, key) => {
   tapLi.addEventListener("click", (e) => {
-    console.log(key);
     e.preventDefault();
-    tapContents.forEach((tapContent, tapkey) => {
-      if (key === tapkey) {
-        tapContent.style.display = "block";
+    tapLis.forEach((tapLi2, key2) => {
+      if (key !== key2) {
+        tapLi2.classList.remove("active");
       } else {
-        tapContent.style.display = "none";
+        tapLi2.classList.toggle("active");
+      }
+    });
+
+    tapContents.forEach((tapContent, tapkey) => {
+      if (key !== tapkey) {
+        tapContent.classList.remove("active");
+      } else {
+        tapContent.classList.toggle("active");
+      }
+    });
+
+    svgs.forEach((svg, k) => {
+      if (key !== k) {
+        svg.classList.remove("activeSv");
+      } else {
+        svg.classList.toggle("activeSv");
       }
     });
   });

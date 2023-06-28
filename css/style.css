@@ -38,14 +38,23 @@ a {
 }
 
 /* gnb */
-.gnb {
+.gnbWrapper {
   position: absolute;
-  color: #ddd;
-  z-index: 99;
-  display: flex;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   padding: 20px 5%;
+  z-index: 99;
+  color: #ddd;
+  width: 100%;
+}
+.gnb {
+  color: #ddd;
+  display: flex;
   justify-content: right;
   width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
 }
 
 .gnb a {
